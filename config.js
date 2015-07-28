@@ -10,14 +10,6 @@ System.config({
     "*": "*.js",
     "github:*": "jspm_packages/github/*.js",
     "npm:*": "jspm_packages/npm/*.js"
-  },
-  "packages": {
-    "esri-leaflet": {
-      "defaultExtension": false
-    },
-    "esri-leaflet-geocoder": {
-      "defaultExtension": false
-    }
   }
 });
 
@@ -26,8 +18,8 @@ System.config({
     "babel": "npm:babel-core@5.8.3",
     "babel-runtime": "npm:babel-runtime@5.8.3",
     "core-js": "npm:core-js@0.9.18",
-    "esri-leaflet": "npm:esri-leaflet@2.0.0-beta.3",
-    "esri-leaflet-geocoder": "npm:esri-leaflet-geocoder@2.0.0-beta.1",
+    "esri-leaflet": "npm:esri-leaflet@2.0.0-beta.5",
+    "esri-leaflet-geocoder": "npm:esri-leaflet-geocoder@2.0.0-beta.3",
     "leaflet": "npm:leaflet@1.0.0-beta.1",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -94,7 +86,7 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:asn1.js@2.1.2": {
+    "npm:asn1.js@2.1.3": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
       "bn.js": "npm:bn.js@2.2.0",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -334,7 +326,7 @@ System.config({
       "bn.js": "npm:bn.js@2.2.0",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
-      "miller-rabin": "npm:miller-rabin@2.0.1",
+      "miller-rabin": "npm:miller-rabin@2.1.0",
       "randombytes": "npm:randombytes@2.0.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
@@ -368,11 +360,15 @@ System.config({
     },
     "npm:esri-leaflet-geocoder@2.0.0-beta.1": {
       "browserify": "npm:browserify@11.0.0",
-      "esri-leaflet": "npm:esri-leaflet@2.0.0-beta.3",
+      "esri-leaflet": "npm:esri-leaflet@2.0.0-beta.5",
       "leaflet": "npm:leaflet@1.0.0-beta.1",
       "tsify": "npm:tsify@0.11.4"
     },
-    "npm:esri-leaflet@2.0.0-beta.3": {
+    "npm:esri-leaflet-geocoder@2.0.0-beta.3": {
+      "esri-leaflet": "npm:esri-leaflet@2.0.0-beta.5",
+      "leaflet": "npm:leaflet@1.0.0-beta.1"
+    },
+    "npm:esri-leaflet@2.0.0-beta.5": {
       "leaflet": "npm:leaflet@1.0.0-beta.1"
     },
     "npm:glob@4.5.3": {
@@ -451,8 +447,8 @@ System.config({
     "npm:lodash@3.10.0": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:miller-rabin@2.0.1": {
-      "bn.js": "npm:bn.js@2.2.0",
+    "npm:miller-rabin@2.1.0": {
+      "bn.js": "npm:bn.js@3.1.1",
       "brorand": "npm:brorand@1.0.5"
     },
     "npm:minimatch@2.0.10": {
@@ -502,7 +498,7 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:parse-asn1@3.0.1": {
-      "asn1.js": "npm:asn1.js@2.1.2",
+      "asn1.js": "npm:asn1.js@2.1.3",
       "browserify-aes": "npm:browserify-aes@1.0.2",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "create-hash": "npm:create-hash@1.1.1",
@@ -626,7 +622,7 @@ System.config({
     "npm:stream-browserify@1.0.0": {
       "events": "github:jspm/nodelibs-events@0.1.1",
       "inherits": "npm:inherits@2.0.1",
-      "readable-stream": "npm:readable-stream@1.0.33"
+      "readable-stream": "npm:readable-stream@1.1.13"
     },
     "npm:stream-browserify@2.0.0": {
       "events": "github:jspm/nodelibs-events@0.1.1",

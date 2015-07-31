@@ -1,6 +1,6 @@
 import L from 'leaflet';
 import { featureLayer, basemapLayer } from 'esri-leaflet';
-import { geosearch, arcgisOnlineProvider, featureLayerProvider} from 'esri-leaflet-geocoder';
+import { geosearch, arcgisOnlineProvider, featureLayerProvider } from 'esri-leaflet-geocoder';
 
 L.Icon.Default.imagePath = '/jspm_packages/npm/leaflet@1.0.0-beta.1/dist/images';
 

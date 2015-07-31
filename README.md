@@ -10,9 +10,9 @@ Example of using [Esri Leaflet](http://esri.github.io/esri-leaflet) with [JSPM](
 5. Start the web server `http-server .`
 6. Open [http://localhost:8080](http://localhost:8080) in your browser.
 
-## Single File build
+## Single File Build
 
-You can not follow any of [JSPM's production workflows](https://github.com/jspm/jspm-cli/wiki/Production-Workflows) to get a single file suitable for production. The easiest way is to run the bundle command
+You can follow any of [JSPM's production workflows](https://github.com/jspm/jspm-cli/wiki/Production-Workflows) to get a single file suitable for production. The easiest way is to run the bundle command
 
 ```bash
 jspm bundle main --inject --minify
@@ -37,7 +37,7 @@ and 3 modules from [Esri Leaflet Geocoder](https://github.com/Esri/esri-leaflet-
 
 You can create a custom build that includes all of these modules with the [Esri Leaflet Bundler](http://github.com/esri/esri-leaflet-bundler). This will reduce the size of your build to from 54.63 kB (gzipped) to 48.86 kB (gzipped), an 11% reduction.
 
-To set this project up for custom builds you will need to install the dependencies with NPM:
+To set this project up for custom builds you will need to install the dependencies with NPM rather then JSPM:
 
 1. Run `npm init` to create a package.json
 2. Run `npm install esri-leaflet@latest`
@@ -46,7 +46,6 @@ To set this project up for custom builds you will need to install the dependenci
 Then create a file called `esri-leaflet-custom-build.js` with the following contents:
 
 ```js
-// my-custom-build.js
 import {
   featureLayer,
   basemapLayer
